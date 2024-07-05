@@ -14,11 +14,21 @@
             height: 100vh; /* Full height of the viewport */
             border: none; /* Removes iframe border */
         }
+        #game-info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000; /* Ensures it is on top of the iframe */
+        }
     </style>
 </head>
 <body>
     <iframe src="game/index.html" frameborder="0"></iframe>
-    <div id="game-info" style="position: absolute; top: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px;">
+    <div id="game-info">
         <h1>Asteroid Impact</h1>
         <p>Description: Navigate through an asteroid field and avoid collisions!</p>
         <h2>Controls:</h2>
